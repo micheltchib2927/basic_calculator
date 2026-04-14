@@ -11,7 +11,7 @@ body{
     background-color: rgb(235, 220, 220);
     height: 500px;
     width: 500px;
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,6 +24,10 @@ body{
     width: 95%;
     margin-top: 20px;
     margin-bottom: 30px;
+    font-family: sans-serif;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
 }
 
 .buttons-box{
@@ -40,13 +44,40 @@ body{
 .btn{
     height: 70px;
     width: 100px;
-    background-color: black;
+    background-color: rgb(236, 77, 77);
     margin-bottom: 10px;
     border-radius: 15px;
     margin-right: 10px;
     text-align: center;
+    border-style: none;
+}
+
+.btn[data-type = "number"]{
+    background-color: white;
+}
+
+.btn[data-type = "operator"]{
+    background-color: rgb(48, 48, 172);
+}
+
+.btn[data-type = "equal_sign"]{
+    background-color: green;
+    height: 210px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn:active{
+    background-color: rgb(83, 82, 82);
 }
 
 .btn p{
     color: white;
+    font-size: large;
+}
+
+.btn[data-type = "number"] p{
+    color: black;
 }
