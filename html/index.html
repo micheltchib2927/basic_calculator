@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/app.js" type="module"></script>
 </head>
 <body>
     <div class="calculator">
         <div class="text-box">
-            <p>Example text</p>
+            <p></p>
         </div>
         <div class="buttons-box">
             <div class="buttons-row">
-                <button class="btn"><p>C</p></button>
+                <button class="btn" data-type="cleaner"><p>C</p></button>
                 <button class="btn" data-type="number"><p>7</p></button>
                 <button class="btn" data-type="number"><p>4</p></button>
                 <button class="btn" data-type="number"><p>1</p></button>
@@ -31,6 +32,7 @@
                 <button class="btn" data-type="number"><p>9</p></button>
                 <button class="btn" data-type="number"><p>6</p></button>
                 <button class="btn" data-type="number"><p>3</p></button>
+                <button class="btn"><p>DEL</p></button>
             </div>
             <div class="buttons-row">
                 <button class="btn" data-type="operator"><p>-</p></button>
